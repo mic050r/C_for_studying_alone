@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main() {
+	int a;
+	int* p;
+	for (int i = 0; i < 2; i++) {
+		printf("a를 입력하세요 : ");
+		scanf_s("%d", &a);
+		p = &a;
+		printf("a = %d, *p = %d \n", a, *p);
+	}
+
+	
+
+}

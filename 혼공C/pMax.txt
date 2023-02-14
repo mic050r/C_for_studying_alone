@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+	int a, b;
+	printf("정수를 입력하시오 : ");
+	scanf_s("%d", &a);
+	printf("정수를 입력하시오 : %d");
+	scanf_s("%d", &b);
+	int larger = max(a, b);
+	printf("더 큰 값은 %d입니다. ", larger);
+		return 0;
+
+}int max(int a, int b) {
+	int result;
+	if (a < b) {
+		return b;
+	}
+	else {
+		return a;
+	}
+	printf("더 큰 값은 %d입니다. ", result);
+
+	return result;
+}

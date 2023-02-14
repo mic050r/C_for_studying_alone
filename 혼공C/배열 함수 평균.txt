@@ -1,0 +1,32 @@
+#include <stdio.h>
+int generateArray(int score[]) {
+	int score[5];
+	printf("5개의 정수를 입력해주세요 : ");
+	for (int i = 0; i < 5; i++) {
+		scanf_s("%d", &score[i]);
+	}
+}
+void getAverage(int num[]) {
+	int sum = 0;
+	double avg = 0.0;
+	for (int i = 0; i < 5; i++) {
+		int sum =+ num[i];
+	}
+	avg = sum / 5,0;
+	printf("평균 : %.1lf	", sum);
+
+}
+void printArray(int score[]) {
+	for (int i = 0; i < 5; i++) {
+		printf("\n %d", &score[i]);
+	}
+}
+int main() {
+	int num[5] = { 0, };
+	generateArray(num);
+	getAverage(num);
+	printArray(num);
+
+
+	return 0;
+}

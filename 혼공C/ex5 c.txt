@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+void square(int n) {
+	int sum = 1;
+	for (int i = 0; i <= n; i++) {
+		for (int j = 1; j <= n; j++) {
+			
+			printf("%3d", sum++);
+		}
+		printf("\n");
+	}
+	return n;
+
+}
+int main() {
+	int num;
+	printf("정수 입력 : ");
+	scanf_s("%d", &num);
+	square(num);
+
+	return 0;
+}

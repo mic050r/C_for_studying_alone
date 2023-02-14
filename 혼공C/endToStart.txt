@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(void) {
+	int sum = 0;
+	int start, end;
+	printf("시작 수와 마지막 수 입력 : ");
+	scanf_s("%d %d", &start, &end);
+
+	while (start <= end) {
+		sum += start;
+		start++;
+	}
+	printf("%d", sum);
+
+	return 0;
+}

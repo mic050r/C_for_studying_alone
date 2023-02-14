@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(void) {
+	printf("Be happy \n");  //줄 바꿈 \n
+	printf("12345678901234567890 \n");  //줄 바꿈 \n
+	printf("My \t friend \n");  //탭 위치 이동 \t , 줄 바꿈 \n
+	printf("Goot\bd\t chance \n");  //한 칸 왼쪽으로 이동 \b
+	printf("Cow\rW\a\n"); //맨앞으로 이동 \r, 벨소리 \a
+}

@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+void print_info(void); //함수 선언
+
+int main(void) {
+	print_info();
+
+	return 0;
+}
+void print_info(void) {
+	printf("1116    임지현    뉴미디어소프트웨어과    학점\n");
+}
+

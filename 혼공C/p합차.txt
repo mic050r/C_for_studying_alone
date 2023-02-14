@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main(){
+
+	int a, b;
+	printf("정수를 입력하시오 : ");
+	scanf_s("%d", &a);
+	printf("정수를 입력하시오 : ");
+	scanf_s("%d", &b);
+	int result = add(a, b);
+	int result = add(a, b);
+
+	return 0;
+
+
+}
+
+int add(int a, int b){
+	return a +b;
+}
+int sub(int a, int b) {
+	int cha = a - b;
+	if (cha < 0) {
+		cha *= -1;
+		return cha;
+	}
+}
+
+int main() {
+
+	int x, y,sum;
+	printf("정수를 입력하시오 : ");
+	scanf_s("%d", &x);
+	printf("정수를 입력하시오 : ");
+	scanf_s("%d", &y);
+	sum = add(x, y);
+	printf("두 수의 합 = %d\n", sum);
+	printf("두 수의 차 = %d\n", sub(x,y);
+
+	return 0;
+
+
+}

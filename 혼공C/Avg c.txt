@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+double getAvg(int a, int b, int c){
+
+
+	double avg = (a + b + c) / 3.0;
+	return avg;
+	return 0;
+}int main(void) {
+	double a, b, c;
+	printf("세과목읜 점수를 입력하세요.");
+	scanf_s(" %lf %lf %lf", &a, &b, &c);
+	printf("%lf %lf %lf의 말의 평균은", a, b, c, getAvg(a, b, c));
+	return 0;
+}

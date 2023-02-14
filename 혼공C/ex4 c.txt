@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void star(int n) {
+	
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	return n;
+
+}
+int main() {
+	int num;
+	printf("정수 입력 : ");
+	scanf_s("%d", &num);
+	star(num);
+
+	return 0;
+}

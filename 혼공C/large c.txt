@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int large(int a, int b, int c) {
+
+
+	if (a > b) {
+		if (a > c) {
+			return a;
+		}
+	}
+	else 
+		if(b>c){
+		return b;
+		}
+		else {
+			return c;
+		}
+
+	return 0;
+}int main(void) {
+	int a, b, c;
+	scanf_s("정수를 입력하세요 : %d %d %d", &a, &b, &c);
+	return 0;
+}

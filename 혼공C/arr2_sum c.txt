@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(void) {
+	int a[3][3];
+	int b[3][3];
+	int res[3][3];
+
+	printf("첫 번째 배열 : \n");
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			scanf_s("%d", &a[i][j]);
+		}
+	}
+
+	printf("두 번째 배열 : \n");
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			scanf_s("%d", &b[i][j]);
+		}
+	}
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			res[i][j] = a[i][j] + b[i][j];
+		}
+	}
+
+	printf("결과 배열 : \n");
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			printf("%d", res[i][j]);
+			printf("/n");
+		}
+	}
+	return 0;
+}

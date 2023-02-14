@@ -1,0 +1,23 @@
+#include <stdio.h>
+//10 이하의 두 정수 m과 n을 받아서 m을 n만큼 거듭제곱하여
+//나온 값을 리턴하는 함수를 작성하여 다음과 같이 프로그램을 작성하시오
+//ex) 2 10    1024
+long getPower(int m, int n){
+
+	long result = 1; // 0곱하면 0 곱하기의 초기화 => 1
+	for (int i = 1; i < n; i++) {
+
+		for (int i = 1; i <= n; i++) {
+			result *= m;
+		}
+		return result;
+	}
+
+}int main(void) {
+	int m, n;
+	printf("두 정수 입력 : ");
+	scanf_s("&d %d", &m, &n);
+	printf("%d", getPower(m, n));
+
+	
+}

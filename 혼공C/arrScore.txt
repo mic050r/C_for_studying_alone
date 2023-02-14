@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void) {
+	int score[2][3] = { {90, 80, 75}, {95, 87, 62} };
+	printf("         국어  영어  수학 \n");
+	for (int i = 0; i < 2; i++) {
+		printf("학생 %d : ", (i + 1));
+		for (int j = 0; j < 3; j++) {
+			printf("%d    ", score[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+
+	int sum1 = 0;
+	printf("         총합  평균\n");
+	for (int i = 0; i < 2; i++) {
+		printf("학생 %d : ", (i + 1));
+		for (int j = 0; j < 3; j++) {
+			sum1 += score[i][j];
+		}
+		//printf("\n");
+		printf("%d    %3.f\n", sum1, (float)sum1 / 3);
+		
+	}
+
+}

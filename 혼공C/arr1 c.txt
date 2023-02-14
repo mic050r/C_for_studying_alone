@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(void) {//인덱스와 입력되는 숫자와의 매칭...)
+	int count[11] = {0};
+	int num, i = 0;
+	while(1){ //for(;;) == while(1)
+		scanf_s("%d", &num);
+		if (num < 1 || num >10) {break;
+		count[num]++; //중요
+	}
+	for (int i = 0; i <= 10; i++) {
+		if (count[i] > 0)
+			printf("%d : %d개 \n", i, count[i]);
+	}
+
+	return 0;
+}
+	/*#include <stdio.h>
+
+int main(void) {//인덱스와 입력되는 숫자와의 매칭...)
+	int count[11] = {0};
+	int num, i = 0;
+	while(1){ //for(;;)
+		scanf_s("%d", &num);
+		if (num < 1 || num >10) {
+			break;
+	}
+		count[num - 1]++;
+		i++;
+	for (int i = 0; i <= 10; i++) {
+		if (count[i] > 0)
+			printf("%d : %d개 \n", i+1, count[i]);
+	}
+
+	return 0;
+}*/

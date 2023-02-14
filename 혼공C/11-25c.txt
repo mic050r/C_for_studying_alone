@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void printTable(int t[][5], int size);
+int main() {
+	int table[3][5];
+	printTable(table, 3); //배열은 이름으로 호출ㄱ된다.
+		return 0;
+	} 
+void printTable(int t[][5], int size) { //2차원 배열은 행의 수를 생략 가능
+	int table[3][5];
+		for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) { //배열의 for(3)
+			printf("%5d", t[i][j]);
+			printf("\n");
+		}
+	}
+}
+

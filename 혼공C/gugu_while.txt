@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(void) {
+	int count;
+	int sum, i = 0;
+	printf("단 입력 : ");
+	scanf_s("%d", & count);
+	while (i < 9) {
+		i++;
+		sum = i *count;
+		printf("%d * %d = %d\n", count, i, sum);
+	}
+ 
+	return 0;
+}

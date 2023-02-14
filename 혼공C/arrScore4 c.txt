@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+	int grade[5][4], sum[5] = { 0, };
+	int count = 0;
+
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 4; j++) {
+			scanf_s("%d", &grade[i][j]);
+			sum[i] += grade[i][j];
+		}
+	}
+	for (int i = 0; i < 5; i++) {
+		if (sum[i] / 4 >= 80) {
+			printf("pass\n");
+			count++;
+		}
+		else {
+			printf("fall\n");
+		}
+	}
+	printf("Successful : %d", count);
+	return 0;
+}
